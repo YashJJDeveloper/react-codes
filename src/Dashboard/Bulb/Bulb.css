@@ -1,0 +1,8 @@
+.bulb-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+button{
+    background: wheat;
+}

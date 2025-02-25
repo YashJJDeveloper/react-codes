@@ -1,18 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Header.css";
-import SearchBar from "./SearchBar";
 import CartLogo from "./CartLogo";
-import AmazonLogo from "../Amazon/Amazon-Images/Amazon-Logo.png"
-export default class Header extends React.Component{
-    render(){
-        return(
-            <>
+class Header extends Component {
+    render() {
+        return (
             <header className="amazon-header">
-                <img  className= "logo-image"src={AmazonLogo}/>
-                <SearchBar/>
-                <CartLogo/>
+                <img src="https://www.pngplay.com/wp-content/uploads/3/White-Amazon-Logo-PNG-HD-Quality.png" alt="Amazon Logo" className="logo-image" />
+                <div className="amazon-search-bar">
+                    <input type="text" placeholder="Search..." className="search-input" />
+                    <button className="search-button">Search</button>
+                </div>
+                <CartLogo onClick={this.props.openCart} counter={this.props.counter} openCart={this.props.openCart}/>
             </header>
-            </>
-        )
+        );
     }
 }
+
+export default Header;

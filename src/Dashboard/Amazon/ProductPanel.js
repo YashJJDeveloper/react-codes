@@ -1,19 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ProductPanel.css";
 
-export default class Products extends React.Component {
-    render(){
+class Products extends Component {
+    render() {
+        const { items, addItem } = this.props;
+
         return (
-            <main className="product-container">
+            <div className="product-container">
                 {items.map((item) => (
-                    <div className="product-card" key={item.id}>
-                        <img src={item.image} alt={item.buttonLabel} className="product-image" />
-                        <h5>{item.buttonLabel}</h5>
-                        <h5>₹{item.price}</h5>
+                    <div key={item.id} className="product-card">
+                        <img className="product-image" src={item.image} alt={item.buttonLabel} />
+                        <h3 className="product-name">{item.buttonLabel}</h3>
+                        <p className="product-price">₹{item.price}</p>
                         <button className="buy-button" onClick={() => addItem(item)}>Add to Cart</button>
                     </div>
                 ))}
-            </main>
-        )
+            </div>
+        );
     }
 }
+
+export default Products;

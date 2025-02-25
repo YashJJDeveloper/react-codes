@@ -8,7 +8,9 @@
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 40vh;
+    width: 100%;
+    align-items: center;
+    /* margin-top: 40vh; */
   }
   
   label {
@@ -21,13 +23,16 @@
   }
   
   button {
-    background: #007bff;
+    background: none;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
+    align-items: center;
+    font-weight: bolder;
   }
   
   button:hover {
-    background: #0056b3;
+    background: #419bfc55;
+    font-size: 101%;
   }

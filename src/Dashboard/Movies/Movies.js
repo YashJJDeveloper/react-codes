@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Movies.css";
 import Header from "./Header";
 import Form from "./Form";
 import Panel from "./Panel";
@@ -15,7 +15,7 @@ export default class Movies extends React.Component {
 
   // Function to show form
   openForm = () => {
-    this.setState({ showForm: true });
+    this.setState({ showForm: !this.state.showForm });
   };
 
   // Function to add a movie and return to movie list
@@ -29,14 +29,14 @@ export default class Movies extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="movies-container">
         <Header openForm={this.openForm} />
         {this.state.showForm ? (
           <Form addMovie={this.addMovie} />
         ) : (
           <Panel movieArray={this.state.movieArray} openForm={this.openForm} />
         )}
-      </>
+      </div>
     );
   }
 }
