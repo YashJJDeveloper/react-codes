@@ -1,0 +1,14 @@
+.coin-card{
+    display: flex;
+    flex-direction: column;
+    border: dotted rgb(63, 101, 103) 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.coin-image{
+    height: 8vw;
+    width: 8vw;
+}

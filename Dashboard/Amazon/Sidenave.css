@@ -1,0 +1,75 @@
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hidden */
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 1000;
+ 
+}
+.cart-items{
+    color: white;
+}
+.cart-sidebar.open {
+    right: 0; /* Slides in when open */
+}
+
+.close-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.close-btn:hover {
+    background: #cc0000;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cart-sidebar p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.cart-sidebar.open + .overlay {
+    display: block;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .cart-sidebar {
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .cart-sidebar {
+        width: 100%;
+    }
+}

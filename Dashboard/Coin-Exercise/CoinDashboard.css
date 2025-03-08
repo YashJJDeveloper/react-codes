@@ -1,0 +1,23 @@
+.app-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(164, 161, 161);
+    height: 100vh;
+    gap: 2vw;
+    padding: 2vw;
+    
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    width: 10vw;
+    background-color:white;
+    border-radius: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}

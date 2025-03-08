@@ -1,0 +1,14 @@
+.bulb-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+.change-color{
+    background-color: rgb(195, 254, 0);
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    gap: 2%;
+}

@@ -1,0 +1,35 @@
+.amazon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Change from 'hidden' to 'auto' */
+    padding-bottom: 20px; /* Add spacing at the bottom */
+}
+
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+
+.products-container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+
+

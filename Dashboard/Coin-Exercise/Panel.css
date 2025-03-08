@@ -1,0 +1,7 @@
+.panel{
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 10%;
+}

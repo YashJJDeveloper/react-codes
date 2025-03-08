@@ -1,0 +1,117 @@
+/* Wrapper for the whole multiplication table */
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the heading */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Row container for numbers */
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin: 5px 0;
+    
+  }
+  
+  /* Button styling for numbers in the table */
+  .cell-button {
+    width: 6vw;
+    height: 6vw;
+    background-color: rgb(118, 189, 212);
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .cell-button:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  /* Styling for multiplication operators (X and =) */
+  .multi {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fbf8f8;
+  }
+  
+  /* Table container */
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  /* Table selection buttons */
+  .table-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .table-selector button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .table-selector button.selected {
+    background-color: rgb(100, 205, 100);
+    font-weight: bold;
+    border-color: #1fd349;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cell-button {
+      width: 8vw;
+      height: 8vw;
+      font-size: 2vw;
+    }
+  
+    .multi {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cell-button {
+      width: 10vw;
+      height: 10vw;
+      font-size: 3vw;
+    }
+  
+    .multi {
+      font-size: 4vw;
+    }
+  }
+  

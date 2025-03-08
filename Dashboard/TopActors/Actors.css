@@ -1,0 +1,76 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+.cell-button{
+    width: 5vw;
+    height: 5vw;
+    background-color: lightblue;
+}
+.multi{
+    font-size: 1.25vw;
+}
+.actors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .actor-buttons {
+    display: flex;
+    border-radius: 10%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .actor-btn{
+    border-radius: 5px;
+    background-color: rgb(162, 146, 146);
+    height: 10vh;
+    width: 80%;
+    font-size: 85%;
+  }
+  .actor-btn:hover{
+    font-size: 85%;
+    color: white;
+    background-color: rgb(88, 87, 87);
+  }
+  
+  .actor-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actor-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .films-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .film-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    
+  }
+  .film-item {
+    margin-bottom: 15px;
+    border: solid wheat;
+  }
+  
+  .film-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
