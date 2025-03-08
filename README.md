@@ -1,1 +1,1 @@
-# react-codes-movie-ratings
+# react-codes
